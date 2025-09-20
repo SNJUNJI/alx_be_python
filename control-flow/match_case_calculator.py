@@ -1,6 +1,6 @@
 num1=int(input("Enter the first number:"))
 num2=int(input("Enter the second number:"))
-operations=str(input("Choose the operationsation (+, -, *, /):"))
+operations=str(input("Choose the operation (+, -, *, /):"))
 result=0
 match operations:
     case "+":
