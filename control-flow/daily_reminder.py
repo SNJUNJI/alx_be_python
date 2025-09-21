@@ -3,7 +3,7 @@ Priority=str(input("Priority (high/medium/low): "))
 Timebound=str(input("Is it time-bound?(yes/no): "))
 
 match Priority:
-    case "high" if Timebound == "yes":  # Fixed syntax
+    case high if Timebound == "yes":  # Fixed syntax
         print(f"Reminder: {Task} is a high priority Task that requires immediate attention today!")
     case "high" if Timebound == "no":
         print(f"Reminder: {Task} is a high priority Task, but not time-bound.")
