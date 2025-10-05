@@ -1,21 +1,14 @@
-def perform_operation(num1,num2,operation):
-    num1=float(input("Enter the first number: "))
-    num2=float(input("Enter the second number: "))
-    operation=str(input("Enter operation"))
+def perform_operation(num1:float,num2:float,operation:str):
 
     if operation == "add":
-        result=num1+num2
-        return result
+        return num1+num2 
     if operation=="subtract":
-        result=num1-num2
-        return result
+        return num1-num2
     if operation=="multiply":
-        result=num1*num2
-        return result
+        return num1*num2
     if operation == "divide":
         if num1 == 0 or num2 == 0:
             print("ERROR-Division by Zero. ")
         else:
-            result=num1/num2
-            return result
+            return num1/num2
         
