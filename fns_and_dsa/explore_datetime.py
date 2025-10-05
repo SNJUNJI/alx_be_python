@@ -6,7 +6,7 @@ def display_current_datetime():
 def  calculate_future_date(num_of_days):
     current_date=display_current_datetime()
     future_date=current_date+timedelta(days=num_of_days)
-    formated=future_date.strftime("%Y-%m-%d-%H-%M-%S")
+    formated=future_date.strftime("%Y-%m-%d %H:%M:%S")
     return formated
 
 date=display_current_datetime()
