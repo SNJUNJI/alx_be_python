@@ -9,11 +9,14 @@ def convert_to_fahrenheit(celsius):
     return fahrenheit
 temp=float(input("Enter the temperature to convert: "))
 type=str(input("Is this temperature in Celsius or Fahrenheit? (C/F): "))
-if type=="C":
-    result=convert_to_fahrenheit(temp)
-    print(f"{temp}°C is {result}°F")
-elif type=="F":
-    result=convert_to_celsius(temp)
-    print(f"{temp}°F is {result}°C")
+if temp == float or int :
+    if type=="C":
+        result=convert_to_fahrenheit(temp)
+        print(f"{temp}°C is {result}°F")
+    elif type=="F":
+        result=convert_to_celsius(temp)
+        print(f"{temp}°F is {result}°C")
+    else:
+        print("Sorry, no such operations: try again.")
 else:
-    print("Sorry, no such operations: try again.")
+    print("Invalid temperature. Please enter a numeric value.")
