@@ -9,4 +9,4 @@ def safe_divide(numerator, denominator):
         result=num/den
         return result
     except ZeroDivisionError:
-        return "Error: Division by zero."
+        return "Error: Cannot divide by zero."
